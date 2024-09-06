@@ -7,9 +7,7 @@ function guessNumber(number) {
 
 function checkGuess() {
   if (userGuess === null) {
-    document.getElementById("result-message").textContent =
-      "Please choose a number";
-    document.getElementById("result-message").style.color = "orange";
+    alert("Please enter your number");
     return;
   }
 
@@ -17,11 +15,13 @@ function checkGuess() {
   document.getElementById("computer-guess").textContent = computerGuess; 
 
   if (computerGuess === userGuess) {
-    document.getElementById("result-message").textContent = "You Lost!";
-    document.getElementById("result-message").style.color = "green";
+    alert("you won")
+    // document.getElementById("result-message").textContent = "You Won!";
+    // document.getElementById("result-message").style.color = "green";
   } else {
-    document.getElementById("result-message").textContent = "You Won!";
-    document.getElementById("result-message").style.color = "red";
+    alert("Ooops Sorry Try Again");
+    // document.getElementById("result-message").textContent = "You Lost !";
+    // document.getElementById("result-message").style.color = "red";
   }
 
 
