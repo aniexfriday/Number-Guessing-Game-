@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="./numberguessing.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="display-container">
+            <div class="display-box" id="computer-guess">-</div>
+            <div class="display-box" id="user-guess">-</div>
+        </div>
+        <div class="label-container">
+            <div class="label">Computer</div>
+            <div class="label">User</div>
+        </div>
+        <div class="button-container">
+            <button class="number-btn" onclick="guessNumber(0)">0</button>
+            <button class="number-btn" onclick="guessNumber(1)">1</button>
+            <button class="number-btn" onclick="guessNumber(2)">2</button>
+            <button class="number-btn" onclick="guessNumber(3)">3</button>
+            <button class="number-btn" onclick="guessNumber(4)">4</button>
+            <button class="number-btn" onclick="guessNumber(5)">5</button>
+            <button class="number-btn" onclick="guessNumber(6)">6</button>
+            <button class="number-btn" onclick="guessNumber(7)">7</button>
+            <button class="number-btn" onclick="guessNumber(8)">8</button>
+            <button class="number-btn" onclick="guessNumber(9)">9</button>
+            <button class="enter-btn" onclick="checkGuess()">Enter</button>
+        </div>
+        <div id="result-message"></div>
+    </div>
+
+    <script src="./numberguessing.js"></script>
+</body>
+</html>
